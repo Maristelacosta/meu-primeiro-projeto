@@ -113,3 +113,13 @@ function updateCounter() {
     ).textContent =
         `📋 Tarefas pendentes: ${pending}`;
 }
+
+document
+    .getElementById("taskInput")
+    .addEventListener("keypress", function(event) {
+
+        if (event.key === "Enter") {
+            addTask();
+        }
+
+    });
