@@ -1,63 +1,24 @@
-let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+<body>
 
-renderTasks();
+    <div class="container">
 
-function addTask() {
+        <h1>✅ Minha Lista de Tarefas</h1>
 
-    const input =
-        document.getElementById("taskInput");
+        <div class="input-group">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Digite uma tarefa">
 
-    const task =
-        input.value.trim();
-
-    if (task === "") {
-        alert("Digite uma tarefa.");
-        return;
-    }
-
-    tasks.push(task);
-
-    saveTasks();
-    renderTasks();
-
-    input.value = "";
-}
-
-function renderTasks() {
-
-    const taskList =
-        document.getElementById("taskList");
-
-    taskList.innerHTML = "";
-
-    tasks.forEach((task, index) => {
-
-        const li =
-            document.createElement("li");
-
-        li.innerHTML = `
-            ${task}
-            <button onclick="removeTask(${index})">
-                ❌
+            <button onclick="addTask()">
+                Adicionar
             </button>
-        `;
+        </div>
 
-        taskList.appendChild(li);
-    });
-}
+        <ul id="taskList"></ul>
 
-function removeTask(index) {
+    </div>
 
-    tasks.splice(index, 1);
+    <script src="script.js"></script>
 
-    saveTasks();
-    renderTasks();
-}
-
-function saveTasks() {
-
-    localStorage.setItem(
-        "tasks",
-        JSON.stringify(tasks)
-    );
-}
+</body>
