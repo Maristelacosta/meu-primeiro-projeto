@@ -83,9 +83,7 @@ Durante o desenvolvimento deste projeto foram praticados conceitos de:
 
 Acesse a versão publicada:
 
-https://maristelacosta.github.io/meu-primeiro-projeto/
-
----
+[🔗 Abrir aplicação](https://maristelacosta.github.io/meu-primeiro-projeto/)
 
 ## 👩‍💻 Desenvolvido por
 
