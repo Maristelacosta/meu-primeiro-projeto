@@ -1,26 +1,42 @@
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: linear-gradient(135deg, #4facfe, #00f2fe);
-    min-height: 100vh;
     margin: 0;
+    min-height: 100vh;
+
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
+
     padding-top: 50px;
 }
 
 .container {
     background: white;
     width: 90%;
-    max-width: 600px;
+    max-width: 650px;
+
     padding: 30px;
+
     border-radius: 20px;
+
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 h1 {
     text-align: center;
     color: #0366d6;
+}
+
+#taskCounter {
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+#welcome {
+    text-align: center;
+    color: #777;
     margin-bottom: 25px;
 }
 
@@ -31,29 +47,38 @@ h1 {
 
 input {
     flex: 1;
+
     padding: 12px;
+
     border: 2px solid #ddd;
+
     border-radius: 10px;
+
     font-size: 16px;
 }
 
 input:focus {
-    outline: none;
     border-color: #0366d6;
+    outline: none;
 }
 
 button {
     background: #0366d6;
     color: white;
+
     border: none;
+
     padding: 12px 18px;
+
     border-radius: 10px;
+
     cursor: pointer;
+
     font-weight: bold;
 }
 
 button:hover {
-    background: #0253b3;
+    background: #0254b3;
 }
 
 ul {
@@ -64,32 +89,37 @@ ul {
 
 li {
     background: #f8f9fa;
-    margin-bottom: 10px;
-    padding: 14px;
+
     border-radius: 12px;
+
+    margin-bottom: 10px;
+
+    padding: 14px;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
-    transition: 0.2s;
 }
 
-li:hover {
-    transform: translateX(5px);
-    background: #eef6ff;
+.task-buttons {
+    display: flex;
+    gap: 8px;
 }
 
-li button {
+.complete-btn {
+    background: #28a745;
+}
+
+.complete-btn:hover {
+    background: #218838;
+}
+
+.delete-btn {
     background: #dc3545;
-    padding: 8px 12px;
-    border-radius: 8px;
 }
 
-li button:hover {
+.delete-btn:hover {
     background: #b02a37;
-}
-#taskCounter {
-    text-align: center;
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 20px;
 }
