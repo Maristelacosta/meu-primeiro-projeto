@@ -1,3 +1,3 @@
 function mostrarMensagem() {
-    alert("Parabéns! Seu projeto está funcionando.");
+    alert("Parabéns! Você está aprendendo desenvolvimento web!");
 }
