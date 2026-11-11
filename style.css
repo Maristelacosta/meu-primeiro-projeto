@@ -1,23 +1,40 @@
 body {
     font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
     text-align: center;
     background-color: #f4f4f4;
-    padding-top: 100px;
 }
 
 h1 {
     color: #0366d6;
 }
 
+input {
+    width: 70%;
+    padding: 10px;
+}
+
 button {
+    padding: 10px 15px;
     background-color: #0366d6;
     color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #024ea2;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
