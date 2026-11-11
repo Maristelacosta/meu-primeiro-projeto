@@ -87,3 +87,9 @@ li button {
 li button:hover {
     background: #b02a37;
 }
+#taskCounter {
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+}
