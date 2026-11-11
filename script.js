@@ -4,11 +4,8 @@ renderTasks();
 
 function addTask() {
 
-    const input =
-        document.getElementById("taskInput");
-
-    const task =
-        input.value.trim();
+    const input = document.getElementById("taskInput");
+    const task = input.value.trim();
 
     if (task === "") {
         alert("Digite uma tarefa.");
@@ -44,6 +41,8 @@ function renderTasks() {
 
         taskList.appendChild(li);
     });
+
+    updateCounter();
 }
 
 function removeTask(index) {
@@ -60,4 +59,11 @@ function saveTasks() {
         "tasks",
         JSON.stringify(tasks)
     );
+}
+
+function updateCounter() {
+
+    document.getElementById("taskCounter")
+        .textContent =
+        `📋 Total de tarefas: ${tasks.length}`;
 }
